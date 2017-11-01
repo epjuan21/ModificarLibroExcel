@@ -26,10 +26,6 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         If Libro.saved() = False Then
             Dim Respuesta As MsgBoxResult = MsgBox("Desea guardar los cambios en el libro " & Libro.Name & vbExclamation + vbYesNo, "Microsoft Excel")
